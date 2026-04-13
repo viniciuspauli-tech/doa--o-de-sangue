@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body"></div>
+    <div id="escudo">
+    <h2>Formulário de doação de sangue</h2>
+
+    <form action="doacaosangue">
+        <label for="nome">Nome:</label>
+        <br>
+        <input type="text" id="nome" placeholder="digite seu nome">
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <br>
+        <input type="text" id="email" placeholder="digite seu email">
+        <br>
+        <br>
+        <label for="telefone">Telefone:</label>
+        <br>
+        <input type="text" id="telefone" placeholder="digite seu telefone">
+        <br>
+        <br>
+        <label for="peso">Peso:</label>
+        <br>
+        <input type="text" id="peso" placeholder="digite seu peso">
+        <br>
+        <br>
+        <label for="estado">Estado:</label>
+        <br>
+        <input type="text" id="estado" placeholder="digite seu estado">
+        <br>
+        <br>
+        <label for="cidade">Cidade:</label>
+        <br>
+        <input type="text" id="cidade" placeholder="digite sua cidade">
+        <br>
+        <br>
+        <label for="idade">Idade:</label>
+        <div>  <input type="number" id="idade" placeholder="idade" min="16" max="69"></div>
+        <br>
+        <label for="sangue">Tipo sanguíneo:</label>
+        <br>
+        <select name="sangue" id="sangue">
+            <option value="">selecione</option>
+            <option value="A+">A+</option>
+            <option value="A">A</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+
+
+            </select>
+            <br>
+            <br>
+            <input type="radio" name="termo" value="">Eu aceito os termos
+            <br>
+            <button type="submit">enviar</button>
+
+    </form>
+    <div id="resultado"></div>
+
+    <script src="script.js"></script>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
