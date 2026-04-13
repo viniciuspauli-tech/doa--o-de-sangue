@@ -82,3 +82,15 @@ document.getElementById("doacaosangue").addEventListener("submit", function (e) 
     }
 }
 );
+function liberarCidade() {
+    const estado = document.getElementById("estado").value;
+    const cidade = document.getElementById("cidade");
+
+    if (estado.trim() !== "") {
+        cidade.disabled = false;
+        cidade.placeholder = "digite sua cidade";
+    } else {
+        cidade.disabled = true;
+        cidade.placeholder = "digite sua cidade";
+    }
+}
